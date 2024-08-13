@@ -25,7 +25,7 @@ const CalculatorRightPart = ({visible, totalPayment, monthlyPayment}) => {
   }, [monthlyPayment, totalPayment]);
 
   return (
-    <div className={`flex flex-col p-10 gap-2 flex-1 w-full h-full items-start justify-start bg-slate_900 sm:rounded-tr-3xl sm:rounded-br-3xl ${visible ? `block`: `hidden`}`}>
+    <div className={`flex flex-col p-10 sm:mb-0 mb-5 gap-2 flex-1 w-full h-full items-start justify-start bg-slate_900 sm:rounded-tr-3xl sm:rounded-br-3xl ${visible ? `block`: `hidden`}`}>
       <h1 className='text-2xl font-custom text-whitesmoke font-semibold'>Your results</h1>
       <p className='font-custom text-slate_500'>Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayments" again.</p>
 

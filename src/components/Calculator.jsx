@@ -37,7 +37,7 @@ const Calculator = () => {
   }, [mortgageType, totalPayment, monthlyPayment, interestRate, mortgageTerm, mortgageAmount])
 
   return (
-    <div className='w-full sm:mx-40 sm:p-5 h-full flex sm:flex-row flex-col justify-center items-center'>
+    <div className='w-full sm:mx-40 sm:p-5 sm:pb-0 sm:h-[750px] flex sm:flex-row flex-col justify-center items-center'>
         <CalculatorLeftPart {...calculatorProps}/>
         <CalculatorRightPartEmpty visible={empty}/>
         <CalculatorRightPart visible={!empty} totalPayment={totalPayment} monthlyPayment={monthlyPayment}/>
